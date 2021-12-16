@@ -1,7 +1,9 @@
+Run it from src/test/resources folder
+
 Hub 4.1.0 command
-java -jar selenium-server-4.1.0.jar -role hub
+java -jar selenium-server-4.1.0.jar hub
 
 Node command
-java -Dwebdriver.chrome.driver=C:\Jaskirat\Automation\workspace_sapient\seleniumTest\src\test\resources\drivers\chromedriver.exe -Dwebdriver.gecko.driver=C:\Jaskirat\Automation\workspace_sapient\seleniumTest\src\test\resources\drivers\geckodriver.exe -Dwebdriver.edge.driver=C:\Jaskirat\Automation\workspace_sapient\seleniumTest\src\test\resources\drivers\msedgedriver.exe -jar selenium-server-4.1.0.jar node
+java -Dwebdriver.chrome.driver=.\drivers\chromedriver.exe -Dwebdriver.gecko.driver=.\drivers\geckodriver.exe -Dwebdriver.edge.driver=.\drivers\msedgedriver.exe -jar selenium-server-4.1.0.jar node --grid-url http://localhost:4444
 
 
